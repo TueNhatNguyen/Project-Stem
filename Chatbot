@@ -1,0 +1,119 @@
+import random
+name = input("What is your first name? ")
+last = input("What is your last name? ")
+
+print("\n")
+
+print("Hi there, " + name + " " + last + ", nice  to meet you!")
+
+print("\n")
+
+age = int(input("How old are you? "))
+if(age<=-1):
+    print("Non-valid response!")
+elif(age>=0 and age<=3):
+    print("Wow! You are a very young child!")
+elif(age==4):
+    print("You are staring your school learning career! Good luck!")
+elif(age>=5 and age<=10):
+    print("You are in elementary school! Hopefully you have a good time!")
+elif(age==11):
+    print("You are in the last year of elementary school! \nHave a good school year!")
+elif(age==12):
+    print("You are now starting middle school! \nHave a good and fun time!")
+elif(age==13):
+    print("You are in the last year of middle school!")
+elif(age==14):
+    print("You are in the first year of high school! \nHigh school is going to be challenging. \nGood luck!")
+elif(age==15 or age==16):
+    print("You are gonna do well in high school! \nKeep believing in yourself!")
+elif(age==17):
+    print("You are in the last year of high school now! \nKeep up the good work! Also, you can now drive a vehicle!")
+elif(age>=18 and age<=23):
+    print("You are in collage! Wow!")
+elif(age==24):
+    print("You are done with collage and now you are able to have a job! \nWhat do you plan to do in your working career?")
+elif(age>=25 and age<56):
+    print("Keep up the good work! \nYou are doing a great job during your working career!")
+elif(age>=57 and age<=61):
+    print("Wow! You have been working for so long! \nDo you plan on retiring anytime soon?")
+elif(age==62):
+    print("Now you are the age of a senior! \nHope you have a relaxing rest of your life!")
+elif(age>=63 and age<=89):
+    print("How are you doing in life? \nHopefully you are doing really well!")
+elif(age>=90 and age<=94):
+    print("Wow, you have lived for 90+ years!")
+elif(age>=96 and age<=99):
+    print("You are so close to 100 years of age!")
+elif(age==100):
+    print("You have lived for exactly a century! \nDo you have any good memories in life?")
+else:
+    print("You are beyond spectacular, being able to live for over 100 years!")
+
+print("\n")
+
+emotions = input(random.choice(["How are you doing today? ", "What are your emotions for the day? "]))
+#Answer with "I am feeling __________"
+#Options: "happy! :)", "super happy! :D", "okay. :/", "sad. :(", "super sad. D:", "angry. >:(", "super angry. D:<"
+if(emotions=="I am feeling happy! :)"):
+    print("That is good to hear!")
+elif(emotions=="I am feeling super happy! :D"):
+    print("That is extremely good to hear!")
+elif(emotions=="I am feeling okay. :/"):
+    print("At least there isn't anything negative that happened during the day.")
+elif(emotions=="I am feeling sad. :("):
+    print("Hopefully your day gets better! :)")
+elif(emotions=="I am feeling super sad. D:"):
+    print("Hopefully your day doesn't get worse and it gets better! :)")
+elif(emotions=="I am feeling angry. >:("):
+    print("Uh oh! Why are you mad?")
+elif(emotions=="I am super angry. D:<"):
+    print("Please don't do any harm! :(")
+else:
+    print("Non-valid response!")
+    
+print("\n")
+
+fun = input(random.choice(["What is your favorite food? ", "What is your favorite drink? ", "What is your favorite subject? ", "Who is your best friend? "]))
+print("Okay, nice! :)")
+
+print("\n")
+
+
+
+print("Lets play a guess the number game that gives you a random amount of extra credit points if you get the number correct!")
+a = int(input("Enter a number from 1-150: "))
+if(a==random.randint(1,150)):
+    print("You got it correct! You just earned " + str(random.randint(1,150)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,150)) + " extra credit points! :(")
+    print("\n")
+b = int(input("Enter another number from 1-100: "))
+if(b==random.randint(1,100)):
+    print("You got it correct! You just earned " + str(random.randint(1,100)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,100)) + " extra credit points! :(")
+    print("\n")
+c = int(input("Enter another number from 1-50: "))
+if(c==random.randint(1,50)):
+    print("You got it correct! You just earned " + str(random.randint(1,50)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,50)) + " extra credit points! :(")
+    print("\n")
+d = int(input("Enter another number from 1-25: "))
+if(d==random.randint(1,25)):
+    print("You got it correct! You just earned " + str(random.randint(1,25)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,25)) + " extra credit points! :(")
+    print("\n")
+e = int(input("Enter another number from 1-10: "))
+if(e==random.randint(1,10)):
+    print("You got it correct! You just earned " + str(random.randint(1,10)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,10)) + " extra credit points! :(")
+    print("\n")
+f = int(input("Enter another number from 1-5: "))
+if(f==random.randint(1,5)):
+    print("You got it correct! You just earned " + str(random.randint(1,5)) + " extra credit points! :D")
+else:
+    print("You lost the chance to earn " + str(random.randint(1,5)) + " extra credit points! :(")
